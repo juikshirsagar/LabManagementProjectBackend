@@ -1,0 +1,33 @@
+<h1 style="text-align: center;">All Reports</h1>
+<hr>
+<!-- <button (click)="addPatient()">Add Patients</button> -->
+
+<table border="1" id="report">
+    <thead></thead>
+    <tr>
+      <th>RId</th>
+      <th>PatientDetails</th>
+      <!-- <th>LabTestList</th> -->
+      <th>Reportname</th>
+      <th>Status</th>
+      </tr>
+
+      <tbody>
+        <tr *ngFor="let r of report">
+          <td>{{r.rid}}</td>
+          <td><h5>Name:</h5>{{r.pDetails.name}} <br> <h5>DOB</h5>{{r.pDetails.dob}} 
+            <br> <h5>Address</h5>{{r.pDetails.address}}
+            </td>
+          <!-- <td>{{r.labTests.title}}</td> -->
+          <td>{{r.rname}}</td>
+          <td>{{r.status}}</td>
+          <!-- <td><button (click) = "delete(p.pid)" style="color: red;margin: 5px;"> Delete</button></td>
+          <td><button (click) = "updatePatient(p.pid)"  style="color:blue;margin: 5px;"> Update</button></td> -->
+        </tr>
+
+      </tbody>
+  
+      </table>
+<br>
+      <a routerLink="/dashboard" >Back</a>
+      <!-- <footer style="text-align: center;"><br> @LaboratoryManagementSystem2022</footer> -->

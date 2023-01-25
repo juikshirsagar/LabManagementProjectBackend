@@ -1,0 +1,25 @@
+
+<div class="bg-img">
+    <div class="card">
+    <h1>Registration Form</h1>
+    <form [formGroup]="RegForm" (ngSubmit)="signup()" >
+       <label>Username:</label><br>
+      <input type="text" placeholder="User Name" formControlName="user">
+       <br>
+       <span style="color: red;" *ngIf="user && user.invalid && user.touched">This field is invalid</span>
+       <br><br>
+       <label>Password:</label><br>
+       <input type="password" placeholder="password" formControlName="password">
+       <br>
+       <span style="color: red;" *ngIf="password && password.invalid && password.touched">Please Provide Correct Password</span>
+       <br><br>
+       <label>Confirm Password:</label><br>
+       <input type="password" placeholder="confirmpassword" formControlName="confirmPassword" class="form-control" /><br>
+       <span style="color: red;" *ngIf="password && password.invalid && password.touched">Password is unmatched</span>
+       <br> <br>
+       <button class="btn" [disabled]="RegForm.invalid">Login</button>
+    </form>
+    </div>
+    </div>
+    <footer>
+     <br> @LabManagementSystem2022</footer>

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="bg-img">
+<div class="card">
+    <h1>Login Here !!</h1>
+ <form [formGroup]="Login" (ngSubmit)="onSubmit()" >
+    <label >UserName</label><br><br>
+    <i class="fa fa-user icon">:</i>
+    <input type="text" placeholder="User Name" formControlName="user" [(ngModel)]="credentials.username" name="username">
+    <br>
+    <span style="color: red;" *ngIf="user && user.invalid && user.touched">This field is invalid</span>
+    <br><br>
+    <label >Password</label><br><br>
+    <i class='fa fa-lock'>:</i>
+   <input type="password" placeholder="password" formControlName="password" [(ngModel)]="credentials.password" name="password">
+    <br>
+    <span style="color: red;" *ngIf="password && password.invalid && password.touched">Please Provide Correct Password</span>
+    <br><br>
+
+    <button class="btn" [disabled]="Login.invalid">Login</button>
+    <br><br>
+    <a routerLink="/signup">New User? Signup Here !!</a>
+
+ </form>
+</div>
+</div>
+
+<footer contentEditable><br> @LaboratoryManagementSystem2022</footer>

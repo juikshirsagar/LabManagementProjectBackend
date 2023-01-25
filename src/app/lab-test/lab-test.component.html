@@ -1,0 +1,35 @@
+<h1>LabTest Details </h1>
+<hr>
+
+<table border="1" align="center" id="lab">
+    <thead></thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Data</th>
+      <th>Action </th>
+      <th>Action</th>
+    </tr>
+    
+    <tbody>
+        <tr *ngFor="let LabTest of labtests">
+            <td>{{LabTest.id}}</td>
+            <td>{{LabTest.title}}</td>
+            <td>{{LabTest.data}}</td>
+
+            <td><button (click) = "deleteLabTest(LabTest.id)" style="color: red;margin: 5px;"> Delete</button></td>
+           <td><button (click) = "updateLabTest(LabTest.id)"  style="color:blue;margin: 5px;"> Update</button></td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+<h4 style="text-align: center;">To Add LabTest Click Here !!</h4>
+      <div style="text-align: center;">
+      <button class="btn" (click)="addLabTest()">Add Test</button>
+      <a routerLink="/dashboard" >Back</a>
+    </div>
+    <br>
+   
+      <footer style="text-align: center;"><br> @LaboratoryManagementSystem2022</footer>

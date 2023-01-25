@@ -1,0 +1,65 @@
+.bg-img {
+    /* The image used */
+    background-image: url("microscope-medical-laboratory-glassware-65531945.jpg");
+  
+    /* Control the height of the image */
+    min-height: 500px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 35px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 10px;
+    cursor: pointer;
+  }
+
+
+  .button2 {background-color: #008CBA;}
+
+.btn.block {
+    display: block !important;
+}
+.btn.circular {
+  border-radius: 50em !important;
+}
+
+.btn:hover {
+  opacity: 4;
+  color: #000;
+}
+
+h1{
+  text-align: center;
+  padding: 10px;
+  color: crimson;
+}
+
+.grid-container {
+  display: grid;
+  height: 400px;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  /* background-color: #2196F3; */
+  /* padding: 10px; */
+  
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+ 
+  font-size: 40px;
+}

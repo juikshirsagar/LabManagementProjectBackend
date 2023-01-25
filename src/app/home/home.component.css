@@ -1,0 +1,21 @@
+.bg-img {
+    /* The image used */
+    background-image: url("maya_project_01_render_of_science_lab_by_babce_d7l1rj5-pre.jpg");
+  
+    /* Control the height of the image */
+    min-height: 550px;
+  
+    /* Center and scale the image nicely */
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  h1{
+    text-align: center;
+    text-decoration: aqua;
+    color: azure;
+    margin:auto;
+    margin-bottom: 20px;
+  }

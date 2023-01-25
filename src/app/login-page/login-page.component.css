@@ -1,0 +1,62 @@
+.card{
+    margin: auto;
+    margin:20px 0 0 350px;
+      border: 1px solid black;
+      width: 550px;
+      padding: 40px;
+      position: absolute;
+      
+      /* top: 20%; */
+      left: 305;
+  }
+  
+  .bg-img {
+      /* The image used */
+      background-image: url("lab1.jpg");
+    
+      /* Control the height of the image */
+      min-height: 500px;
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+  
+    * {
+      box-sizing: border-box;
+    }
+  
+    label{
+      size: 20px;
+      font-size: larger;
+    }
+  
+    .btn {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 20px 10px;
+      cursor: pointer;
+    }
+  
+  h1{
+    text-align: center;
+  }
+
+  footer{ 
+    text-align: center;
+    min-height:50px; 
+    background:lightgray; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    
+  }

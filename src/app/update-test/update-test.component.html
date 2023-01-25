@@ -1,0 +1,29 @@
+ <h2> update Data OF LabTest </h2>
+            <hr />
+            <div class="card">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label>Id :</label>
+                        <input type="text" class="form-control" id="id" [(ngModel)]="labtest.id"
+                            name="id">
+                    </div><br>
+
+                    <div class="form-group">
+                        <label> Title :</label>
+                        <input type="text" class="form-control" id="title" [(ngModel)]="labtest.title"
+                            name="title">
+                    </div><br>
+
+                    <div class="form-group">
+                        <label>Data :</label>
+                        <input type="text" class="form-control" id="data" [(ngModel)]="labtest.data"
+                            name="data">
+                    </div><br>
+
+                    <br />
+                    <button class="btn" type="submit">Submit</button>
+
+                </form>
+            </div>
+       

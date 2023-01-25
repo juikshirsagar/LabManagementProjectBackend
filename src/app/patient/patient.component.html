@@ -1,0 +1,36 @@
+<h1>Patient Details</h1>
+
+
+<table border="1" align="center" id="patient">
+    <thead></thead>
+    <tr>
+      <th>PId</th>
+      <th>PatientName</th>
+      <th>Address</th>
+      <th>DOB</th>
+      <th>Action</th>
+      </tr>
+
+      <tbody>
+        <tr *ngFor="let p of patient">
+          <td>{{p.pid}}</td>
+          <td>{{p.name}}</td>
+          <td>{{p.address}}</td>
+          <td>{{p.dob}}</td>
+
+          <td><button (click) = "delete(p.pid)" style="color: red;margin: 5px;"> Delete</button></td>
+          <td><button (click) = "updatePatient(p.pid)"  style="color:blue;margin: 5px;"> Update</button></td>
+        </tr>
+
+      </tbody>
+      
+      </table>
+      <h4 style="text-align: center;">To Add Patient Click Here !!</h4>
+      <div style="text-align: center;" >
+     <button class="btn" (click)="addPatient()">Add Patients</button>
+     <a routerLink="/dashboard" >Back</a>
+    </div>
+
+        
+    <footer style="text-align: center;"><br> @LaboratoryManagementSystem2022</footer>
+    
